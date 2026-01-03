@@ -9,17 +9,29 @@
 #define NANOPRINTF_USE_ALT_FORM_FLAG 0
     
 #include <nanoprintf.h>
+#include <uart.h>
 
-void pl_log_store(int ch, void* /* ctx */) {
+void pl_log_store(int ch, void* /* ctx */)
+{
     ((void (*)(char))(0x02047A20))((char)ch);
 }
 
-int printf(const char* fmt, ...) {
+void uart_putc(int ch, void* /* ctx */)
+{
+    mtk_uart_putc(ch);
+}
+
+int printf(const char* fmt, ...)
+{
     va_list args;
+    
     va_start(args, fmt);
-
-    int ret = npf_vpprintf(&pl_log_store, NULL, fmt, args);
-
+    npf_vpprintf(&pl_log_store, NULL, fmt, args);
     va_end(args);
+    
+    va_start(args, fmt);
+    int ret = npf_vpprintf(&uart_putc, NULL, fmt, args);
+    va_end(args);
+    
     return ret;
 }
