@@ -8,15 +8,14 @@ void main(void) {
     printf("          ( O     O )         \n");
     printf("          /   . .   \\         \n");
     printf("         .`._______.'.        \n");
-    printf("        /(           )\\       \n");
-    printf("      _/  \\  \\   /  /  \\_     \n");
-    printf("   .~   `  \\  \\ /  /  '   ~.  \n");
-    printf("  {    -.   \\  V  /   .-    } \n");
-    printf("_ _`.    \\  |  |  |  /    .'_ _\n");
-    printf(">_       _} |  |  | {_       _<\n");
-    printf(" /. - ~ ,_-'  .^.  `-_, ~ - .\\ \n");
-    printf("         '-'|/   \\|`-`        \n");
-    printf("\n   Hello world from payload \n\n");
+    printf("        /(           )\\                              _       \n");
+    printf("      _/  \\  \\   /  /  \\_           ___ _ __  _ __(_) __ _ \n");
+    printf("   .~   `  \\  \\ /  /  '   ~.       / __| '_ \\| '__| |/ _` |\n");
+    printf("  {    -.   \\  V  /   .-    }      \\__ \\ |_) | |  | | (_| |\n");
+    printf("_ _`.    \\  |  |  |  /    .'_ _    |___/ .__/|_|  |_|\\__, |\n");
+    printf(">_       _} |  |  | {_       _<         |_|           |___/ \n");
+    printf(" /. - ~ ,_-'  .^.  `-_, ~ - .\\      \n");
+    printf("         '-'|/   \\|`-`              \n\n");
     
     patch_apply_all();
     bldr_handshake();
