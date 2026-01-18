@@ -1,5 +1,6 @@
 #include <bldr.h>
 #include <debug.h>
+#include <hooks.h>
 #include <patches.h>
 
 void main(void) {
@@ -19,6 +20,7 @@ void main(void) {
     
     set_log_switch(LOG_ON);
     patch_apply_all();
+    hook_install_all();
     bldr_handshake();
     
     while(1); // handshake should not return

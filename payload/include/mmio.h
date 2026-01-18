@@ -2,6 +2,8 @@
 
 #include <stdint.h>
 
+#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
+
 #define dmb(opt)    __asm__ volatile("dmb " #opt ::: "memory")
 #define dsb(opt)    __asm__ volatile("dsb " #opt ::: "memory")
 #define isb()       __asm__ volatile("isb" ::: "memory")

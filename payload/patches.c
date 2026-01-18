@@ -12,8 +12,6 @@ static const patch_t patches[] = {
     PATCH_RET(0x02072370, 0, "Disable DAA"),
 };
 
-#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
-
 void patch_apply_all(void)
 {
     for (size_t i = 0; i < ARRAY_SIZE(patches); i++) {
